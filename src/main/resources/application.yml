@@ -1,0 +1,17 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ucd
+    username: ucd_user
+    password: ucd_user
+  jpa:
+    properties:
+      hibernate:
+        default_schema: ucd
+
+
+  liquibase:
+    changeLog: classpath:database/liquibase-master-changelog.xml
+    url: jdbc:postgresql://localhost:5432/ucd
+    user: ucd
+    password: ucd
